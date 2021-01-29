@@ -1,0 +1,12 @@
+insert into comments(user_id,project_id,comment,vote,user_rating,created_at) values(1,1,'Very Good','like',7.5,NOW());
+
+insert into projects(project_title,description,active_status,technology,rating,image,start_date,expected_end_date,actual_end_date,created_at)
+              values('Synergies HRMS','Related to HR','yes','C Hash',8.5,'Human_Resource.jpg',NOW(),NOW(),NOW(),NOW()),
+                    ('Procurement','internal order Requests','yes','people code',8.0,'procurement.jpg',NOW(),NOW(),NOW(),NOW()),
+                    ('Trans Global TM','Logistics Requests','yes','C Hash',8.0,'Transportation.jpg',NOW(),NOW(),NOW(),NOW()),
+                    ('SalesForce Sales','Sales Requests','yes','C Hash',7.0,'Sales.jpg',NOW(),NOW(),NOW(),NOW()),
+                    ('SalesForce Services','Service Requests','yes','C Hash',6.0,'Service.jpg',NOW(),NOW(),NOW(),NOW()),
+                    ('SalesForce Marketing','marketing Requests','yes','C Hash',9.0,'marketing.jpg',NOW(),NOW(),NOW(),NOW()),
+                    ('SalesForce Commerce','Commerce Requests','yes','C Hash',8.0,'Commerce.jpg',NOW(),NOW(),NOW(),NOW()),
+                    ('SalesForce Engagement','Engagement Requests','yes','C Hash',7.0,'Engagement.jpg',NOW(),NOW(),NOW(),NOW()),
+                    ('SalesForce Platform','Sales Requests','yes','C Hash',8.0,'Sales.jpg',NOW(),NOW(),NOW(),NOW());

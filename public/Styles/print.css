@@ -1,0 +1,434 @@
+/*
+////////////////////////////////////////////////////////////////
+//                                                            //
+//               Sandeep Pardeshi                             //
+//               Capstone HTML/CSS Project                    //
+//               Instructor: Brent Scott                      //
+//                                                            //
+////////////////////////////////////////////////////////////////
+*/
+
+/*Print CSS*/
+
+/*Setting the CSS properties for Body tag of each page*/
+body{
+  font-family: Arial;
+  font-size: 16px;
+  margin: 0;
+  color: #000;
+}
+
+/*Setting the CSS properties for Wrapper tag of each page*/
+#wrapper{
+  width: 960px;
+  margin: 0 auto;
+}
+
+/*Setting the CSS properties for Header tag of each page*/
+header{
+  position: relative;
+  height: 135px;
+}
+
+/*Setting the CSS properties for Main Logo header on each page*/
+#main_logo h1{
+  font-family: Arial, Helvatica, sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  position: absolute;
+  left: 71px;
+  bottom: 32px;
+  margin: 0;
+  color: #000;
+}
+
+/*Setting the CSS properties for Main Logo image each page*/
+header #main_logo img{
+  position: absolute;
+  bottom: 4px;
+}
+
+/*Setting the CSS properties for navigation tag of each page*/
+nav{
+  display: none;
+}
+
+/*Section specing*/
+section{
+  min-height: 400px;
+}
+
+/*Home page welcome text positioning*/
+section .welcome_text{
+  margin-top: 30px;
+}
+
+/*Welcome bold text*/
+section p.welcome_start{
+  font-family: Arial, Helvatica, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  margin: 15px 0 0 0;
+  color: #000;
+  font-size: 32px;
+}
+
+/*Welcome secondary text*/
+section p.welcome_close{
+  margin: 10px 0 30px 0;
+  color: #000;
+  font-size: 20px;
+}
+
+/*Alligning callouts in a line*/
+#sec_callout div{
+  float: left;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/*Adjusting container for home page callouts*/
+.home_callout{
+  position: relative;
+  box-sizing: border-box;
+  height: 300px;
+  width: 300px;
+}
+
+/*Adjusting position for second callout*/
+#callout_2{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* setting padding for second callout*/
+#sec_callout #callout_2 img{
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/*Setting image layout for callouts*/
+#sec_callout .home_callout img{
+  padding: 20px;
+  left: 25px;
+  top: 25px;
+}
+
+/*Adjusting dimensions for home callouts*/
+.home_callout div{
+  text-align: center;
+  width: 100%;
+  height: 230px;
+}
+
+/*Aligning all the paragraphs for callouts in sections*/
+#sec_callout p{
+/*  text-align: center;*/
+  vertical-align: text-bottom;
+}
+
+/*Changing font size specifically for all the paragraph tags in div for callouts*/
+div#sec_callout p{
+  font-size: 30px;
+  color: #000;
+}
+
+/*Positioning and background property for intro box*/
+#intro_box{
+  margin-top: 5px;
+  box-sizing: border-box;
+  clear: both;
+  height: 220px;
+  width: 100%;
+}
+
+/*Image and text positioning for intro box*/
+#intro_box img{
+  padding: 10px 10px 10px 10px;
+  float: left;
+}
+
+/*Paragraph positioning for Intro box*/
+#intro_box p{
+  margin: 0;
+  padding: 10px 5px 0 5px;
+}
+
+/*Setting up page footer*/
+footer{
+  position: relative;
+  padding: 46px 10px 0px 10px;
+  height: 100px;
+  color: #000;
+  clear: both;
+  font-size: .9em;
+  box-sizing: border-box;
+}
+
+/*Positioning social media icons*/
+#smedia_icon{
+  position: absolute;
+  right: 7px;
+  bottom: 5px;
+}
+
+/*Adjusting spacing between social media icons*/
+#smedia_icon img{
+  margin-left: 7px;
+}
+
+/****************** Work Styles ******************/
+
+/*Page heading rule for this page and all other pages*/
+section h2.page_head{
+  font-size: 1.7em;
+  color: #000;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  padding-top: 20px;
+}
+
+p#work_desc{
+  color: #000;
+}
+
+/*Projects display*/
+.projects{
+  position: relative;
+  margin-top: 5px;
+  box-sizing: border-box;
+  clear: both;
+  height: 220px;
+  width: 100%;
+}
+
+/*Projects image and included paragraph positioning*/
+.projects img{
+  padding: 10px 10px 10px 10px;
+  float: left;
+}
+
+/*Project heading positioning*/
+.projects h2{
+  margin: 10px 0 0 0;
+  padding-top: 15px;
+}
+
+/*Project description animation*/
+.projects div{
+  position: absolute;
+  right: 10px;
+  margin: 0;
+  padding: 10px 5px 0 5px;
+  max-width: 524px;
+  z-index: 100;
+}
+
+/****************** Gaming Styles ******************/
+
+/*Page intro paragraph text colouring*/
+section p#gaming_text{
+  color: #000;
+}
+
+/*Display container box positioning*/
+section div#gaming_box{
+  margin-top: 20px;
+}
+
+/*Box spacing and display*/
+section div.gaming_cols{
+  min-height: 300px;
+  width: 300px;
+  text-align: center;
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*CSS specifically for center box*/
+section div#mid_box{
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-bottom: 0px;
+}
+
+/*Alignment for mid box table*/
+section div#mid_box img{
+  margin-top: 10px;
+}
+
+/*Image shadow and sizing*/
+section div.gaming_cols img{
+  width: 280px;
+  height: auto;
+}
+
+/*Table sizing to fit in the display box*/
+section div.gaming_cols table{
+  margin: 0 auto;
+  width: 94%;
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+/*Table caption style*/
+div.gaming_cols caption{
+  border: 2px solid #000;
+  border-bottom: none;
+  color: #000;
+}
+
+/*Table data border*/
+div.gaming_cols th, div.gaming_cols td{
+  border: 2px solid #000;
+}
+
+/****************** Quaver Styles ******************/
+
+/*Main page box containing Image and text*/
+div#quaver_box{
+  margin-top: 10px;
+  min-height: 450px;
+  width: 100%;
+}
+
+/*Image border and paragraph adjustment*/
+div#quaver_box div#my_guitar img{
+  margin: 20px 15px 5px 10px;
+  float: left;
+}
+
+/*CSS for page signature*/
+div#quaver_box p#signature{
+  font-family: Arial, Helvatica, sans-serif;
+  font-weight: 700;
+  font-size: 1.4em;
+}
+
+/*CSS for hiding image that is to be displayed on mobile site*/
+div#quaver_box div#mobile_guitar img{
+  display: none;
+}
+
+/*Adjusting text on page inside container*/
+div#quaver_intro{
+  padding: 20px 10px 10px 10px;
+}
+
+/****************** Contact Styles ******************/
+
+/*Rules for h1 and legend tag*/
+section h1, legend{
+  font-family: Arial, Helvatica, sans-serif;
+  font-weight: 700;
+}
+
+/*Rule specific to legend tag*/
+section form legend{
+  border-radius: 8px;
+}
+
+/*Rule specific to fieldset inside a form with class*/
+form.form_style fieldset{
+  width: 960px;
+  box-sizing: border-box;
+  border: 1px solid #333;
+  margin: 10px 0;
+}
+
+/*Rule specific to legend inside a form with class*/
+form.form_style legend{
+  display: block;
+  color: #000;
+  padding: 1px 8px 2px 8px;
+  border: 1px solid #333;
+}
+
+/*Rule specific to label inside a form with class*/
+form.form_style label{
+  width: 150px;
+  display: block;
+  clear: both;
+  float: left;
+}
+
+/*Rule specific to input sibling inside a form with class*/
+form.form_style input + label{
+  float: none;
+  display: inline;
+  width: auto;
+}
+
+/*Rule specific to select sibling inside a form with class*/
+form.form_style label + select{
+  float: none;
+  display: inline;
+  width: auto;
+}
+
+/*Multiple CSS selector for input tag*/
+form.form_style input[type="text"],
+form.form_style input[type="email"],
+form.form_style input[type="password"],
+form.form_style input[type="tel"],
+form.form_style input[type="number"]
+{
+  width: 250px;
+  border: 2px solid #666;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+/*Rule specific to positioning Submit and Reset buttons*/
+#btn_align{
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+/*Rule for label tag with a class query_label which is inside form tag with a class form_style*/
+form.form_style label.query_label{
+  float: none;
+  display: block;
+  width: auto;
+}
+
+/****************** Marks Styles ******************/
+
+/*CSS for Container element*/
+div#marks_box{
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 100%;
+  padding: 50px 50px;
+  box-sizing: border-box;
+}
+
+/*Table sizing to fit in the display box*/
+section div#marks_box table{
+  margin: 0 auto;
+  width: 94%;
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+/*Table caption style*/
+div#marks_box caption{
+  border: 2px solid #000;
+  border-bottom: none;
+  color: #000;
+}
+
+/*Table heading border and coloring*/
+div#marks_box th{
+  border: 2px solid #000;
+  color: #000;
+}
+
+/*Table data border*/
+div#marks_box td{
+  border: 2px solid #000;
+  padding: 5px 7px 5px 7px;
+  box-sizing: border-box;
+}

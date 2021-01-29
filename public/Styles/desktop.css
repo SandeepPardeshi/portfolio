@@ -1,0 +1,793 @@
+/*
+////////////////////////////////////////////////////////////////
+//                                                            //
+//               Sandeep Pardeshi                             //
+//               Capstone HTML/CSS Project                    //
+//               Instructor: Brent Scott                      //
+//                                                            //
+////////////////////////////////////////////////////////////////
+*/
+
+/*Setting the CSS properties for Body tag of each page*/
+body{
+  font-family: Vollkorn, Arial, Tahoma, Helvatica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5em;
+  /*background-color: #6d6d8b;*/
+  background: linear-gradient(#000, #7e7e8a, #6d6d8b);
+  /*background-image: url(../Images/Assassin_Desktop.jpg);*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0 auto;
+}
+
+/*Setting the CSS properties for Wrapper tag of each page*/
+#wrapper{
+  width: 960px;
+  margin: 0 auto;
+/*      background-color: #ccc;*/
+}
+
+/*Setting the CSS properties for Header tag of each page*/
+header{
+  position: relative;
+  height: 135px;
+  padding: 10px 20px 15px 5px;
+  background: linear-gradient(#000, #6d6d8b);
+  opacity: .8;
+  box-sizing: border-box;
+}
+
+/*Setting the CSS properties for Main Logo header on each page*/
+#main_logo h1{
+  font-family: 'Lobster Two', Arial, Tahoma, Helvatica, sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  position: absolute;
+  left: 71px;
+  bottom: 32px;
+  margin: 0;
+}
+
+/*Setting the CSS properties for Main Logo image each page*/
+header #main_logo img{
+  position: absolute;
+/*      height: 116px;*/
+  bottom: 4px;
+}
+
+#utilitynav{
+  position: absolute;
+  /*float: left;*/
+  right: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#utilitynav li{
+  list-style-type: none;
+  display: inline-block;
+}
+
+#utilitynav li a{
+  /*float: left;*/
+  text-decoration: none;
+  display: block;
+  box-sizing: border-box;
+  padding: 5px 11px;
+  margin: 7px 2px;
+  border: 2px solid #fff;
+}
+
+/*Setting the CSS properties for navigation tag of each page*/
+nav{
+  font-family: 'Lobster Two', Arial, Tahoma, Helvatica, sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  position: absolute;
+  color: #e5e5e5;
+  float: left;
+  right: 0px;
+  bottom: 0px;
+}
+
+/*Setting positioning for unordered list on a ul*/
+nav ul{        
+  margin: 0;
+  padding: 0;
+}
+
+/*Rule for li inside a ul which is inside a nav tag*/
+nav ul li{
+  position: relative;
+  list-style-type: none;
+  display: inline-block;
+}
+
+/*Setting properties for anchor tags in navigation*/
+nav ul li a{
+  text-decoration: none;
+  font-size: 1.5em;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  /*  border: 1px solid #000;*/
+  padding: 10px 11px;
+  margin: 2px 0;
+}
+
+/*Setting hover animation for navigation list items*/
+nav ul li a::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 40px;
+  background-color: rgba(200,200,200,.3);
+  -webkit-transition: width .3s ease-in-out;
+  -moz-transition: width .3s ease-in-out;
+  -o-transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+}
+
+/*Compleating transition property of progress bar for navigation list elements*/
+nav ul li a:hover::after{
+  width: 100%;
+}
+
+/*To identify user is on which page*/
+nav ul li.page_selection a::after{
+  content: '';
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(200,200,200,.3);
+}
+
+/*Link Display*/
+a:link{
+  color: #fff;
+}
+
+/*Visited link display*/
+a:visited{
+  color: #fff;
+}
+
+/*Hovered link display*/
+a:hover{
+  color: #fff;
+}
+
+/*Section specing*/
+section{
+  min-height: 400px;
+}
+
+/*Home page welcome text positioning*/
+section .welcome_text{
+  margin-top: 30px;
+}
+
+/*Welcome bold text*/
+section p.welcome_start{
+  font-family: Vollkorn, Arial, Tahoma, Helvatica, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  margin: 15px 0 0 0;
+  color: #ddd;
+  font-size: 32px;
+}
+
+/*Welcome secondary text*/
+section p.welcome_close{
+  margin: 10px 0 30px 0;
+  color: #ddd;
+  font-size: 20px;
+}
+
+/*Alligning callouts in a line*/
+#sec_callout div{
+  float: left;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/*Adjusting container for home page callouts*/
+.home_callout{
+  position: relative;
+  box-sizing: border-box;
+  height: 300px;
+  width: 300px;
+  background-color: rgba(255,255,255, .5);
+  transition: all .3s ease-in-out;
+}
+
+/*Home callout hover effect*/
+a:hover div.home_callout{
+  box-shadow: 0 0 7px #000;
+}
+
+/*Adjusting position for second callout*/
+#callout_2{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* setting padding for second callout*/
+#sec_callout #callout_2 img{
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/*Setting image layout for callouts*/
+#sec_callout .home_callout img{
+  padding: 20px;
+  left: 25px;
+  top: 25px;
+}
+
+/*Adjusting dimensions for home callouts*/
+.home_callout div{
+  text-align: center;
+  width: 100%;
+  height: 230px;
+}
+/*
+#sec_block div#sub_head p{
+  position: absolute;
+  bottom: 10px;
+}
+*/
+
+/*Aligning all the paragraphs for callouts in sections*/
+#sec_callout p{
+  text-align: center;
+  vertical-align: text-bottom;
+}
+
+/*Changing font size specifically for all the paragraph tags in div for callouts*/
+div#sec_callout p{
+  font-size: 30px;
+  color: #000;
+}
+
+/*Text shadow for introduction heading*/
+h2#intro_head{
+  text-shadow: 1px 1px 4px #fff;
+}
+
+/*Positioning and background property for intro box*/
+#intro_box{
+  margin-top: 5px;
+  box-sizing: border-box;
+  clear: both;
+  height: 220px;
+  width: 100%;
+  background-color: rgba(255,255,255, .5);
+}
+
+/*Image and text positioning for intro box*/
+#intro_box img{
+  padding: 10px 10px 10px 10px;
+  float: left;
+}
+
+/*Paragraph positioning for Intro box*/
+#intro_box p{
+  margin: 0;
+  padding: 10px 5px 0 5px;
+}
+
+/*Setting up page footer*/
+footer{
+  position: relative;
+  padding: 46px 10px 0px 10px;
+  height: 100px;
+/*      background-color: #666;*/
+  color: #000;
+  clear: both;
+/*      text-align: center;*/
+  font-size: .9em;
+  box-sizing: border-box;
+/*
+  text-shadow: .5px .5px 0 #333,
+               .5px -.5px 0 #333,
+               -.5px .5px 0 #333,
+               -.5px -.5px 0 #333,
+               .5px 0px 0 #333,
+               0px .5px 0 #333,
+               -.5px 0px 0 #333,
+               0px -.5px 0 #333;
+*/
+}
+
+/*
+footer #last_modified{
+  text-align: center;
+}
+*/
+
+/*Positioning social media icons*/
+#smedia_icon{
+  position: absolute;
+  right: 7px;
+  bottom: 5px;
+}
+
+/*Adjusting spacing between social media icons*/
+#smedia_icon img{
+  margin-left: 7px;
+}
+
+/****************** Work Styles ******************/
+
+/*Animating text for project description*/
+@keyframes proj_anime{
+  from{
+    opacity: 0;
+    background-color: rgba(255,255,221,1);
+    right: 300px;
+  }
+  to{
+    opacity: 1;
+    background-color: rgba(255,255,221,0);
+    right: 10px;
+  }
+}
+
+/*Page heading rule for this page and all other pages*/
+section h2.page_head{
+  font-size: 1.7em;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/*Work description color change*/
+p#work_desc{
+  color: #fff;
+}
+
+#search_box{
+  float: right;
+  padding-right: 5px;
+}
+
+form.search_style input[type="text"]
+{
+  box-shadow: inset 1px 1px 3px;
+  border: 2px solid #666;
+  padding: 2px;
+  border-radius: 8px;
+}
+
+div#technology_box{
+  position: relative;
+  margin-top: 5px;
+  box-sizing: border-box;
+  padding-top: 5px;
+  clear: both;
+  height: 65px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, .6);
+}
+
+h2#technology{
+  /*float: left;*/
+  padding-left: 6px;
+  margin: 0;
+}
+
+#technology_nav{
+  position: relative;
+  padding-left: 0;
+  margin: 0;
+  left: 0;
+}
+
+#technology_nav li{
+  float: left;
+  list-style-type: none;
+  display: block;
+  margin-bottom: 5px;
+  padding: 0;
+}
+
+#technology_nav li a{
+  /*text-decoration: none;*/
+  font-size: 0.9em;
+  display: block;
+  font-weight: bold;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0px 11px;
+  margin: 0;
+}
+
+#technology_nav li a:link{
+  color: #000;
+}
+
+#technology_nav li a:visited{
+  color: #000;
+}
+
+#technology_nav li a:hover{
+  color: #00d;
+  transition: color .3s ease-in-out;
+}
+
+#technology_nav li a.active_page{
+  color: #900;
+}
+
+/*Projects display*/
+.projects{
+  position: relative;
+  margin-top: 5px;
+  box-sizing: border-box;
+  clear: both;
+  height: 220px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, .6);
+}
+
+/*Projects image and included paragraph positioning*/
+.projects img{
+  padding: 10px 10px 10px 10px;
+  float: left;
+}
+
+/*Project heading positioning*/
+.projects h2{
+  margin: 10px 0 0 0;
+  padding-top: 15px;
+}
+
+/*Project description animation*/
+.projects div{
+  position: absolute;
+  right: 10px;
+  margin: 0;
+  padding: 10px 5px 0 5px;
+  width: 624px;
+  z-index: 100;
+  animation: proj_anime 1s ease-in-out;
+}
+
+/****************** Work Details Styles ******************/
+
+.description{
+  position: relative;
+  margin-top: 5px;
+  box-sizing: border-box;
+  clear: both;
+  height: auto;
+  width: 100%;
+  background-color: rgba(255, 255, 255, .6);
+  padding: 10px 10px 10px 10px;
+}
+
+/*CSS for Container element*/
+div#description_box{
+  /*margin: 0 auto;
+  margin-top: 15px;
+  background-color: rgba(255,255,255,0.6);
+  width: 100%;
+  padding: 50px 50px;*/
+  box-sizing: border-box;
+}
+
+/*Table sizing to fit in the display box*/
+div#description_box table{
+  /*margin: 0 auto;
+  width: 50%;*/
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+/*Table caption style*/
+div#description_box caption{
+  border: 2px solid #000;
+  border-bottom: none;
+  background-color: #000;
+  color: #fff;
+}
+
+/*Table heading border and coloring*/
+div#description_box th{
+  width: 60%;
+  text-align: left;
+  border: 2px solid #000;
+  padding: 1px 20px 0px 20px;
+  background-color: #6d6d8b;
+  color: #ccc;
+}
+
+/*Table data border*/
+div#description_box td{
+  font-weight: bold;
+  border: 2px solid #000;
+  padding: 1px 20px 0px 20px;
+  box-sizing: border-box;
+}
+
+form.comments textarea{
+  width: 99%;
+}
+
+#show_comment{
+  height: auto;
+  padding: 5px 5px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, .5);
+  width: 97%;
+  margin-bottom: 2px;
+}
+
+
+/****************** Gaming Styles ******************/
+
+/*Page intro paragraph text colouring*/
+section p#gaming_text{
+  color: #fff;
+}
+
+/*Display container box positioning*/
+section div#gaming_box{
+  margin-top: 20px;
+}
+
+/*Box spacing and display*/
+section div.gaming_cols{
+  min-height: 300px;
+  width: 300px;
+  background-color: rgba(255,255,255,0.6);
+  text-align: center;
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*CSS specifically for center box*/
+section div#mid_box{
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-bottom: 0px;
+}
+
+/*Alignment for mid box table*/
+section div#mid_box img{
+  margin-top: 10px;
+}
+
+/*Image shadow and sizing*/
+section div.gaming_cols img{
+  box-shadow: -1px 3px 5px rgba(0,0,0,0.8);
+  width: 280px;
+  height: auto;
+  transition: all .3s ease-in-out;
+}
+
+/*Table sizing to fit in the display box*/
+section div.gaming_cols table{
+  margin: 0 auto;
+  width: 94%;
+  border: 1px solid #000;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Table caption style*/
+div.gaming_cols caption{
+  border: 2px solid #000;
+  border-bottom: none;
+  background-color: #000;
+  color: #fff;
+}
+
+/*Table data border*/
+div.gaming_cols th, div.gaming_cols td{
+  border: 2px solid #000;
+}
+
+/*Hover on image to get an enlarged view*/
+section div.gaming_cols img:hover{
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+/****************** Quaver Styles ******************/
+
+/*Main page box containing Image and text*/
+div#quaver_box{
+  margin-top: 10px;
+  min-height: 450px;
+  width: 100%;
+  background-color: rgba(255,255,255,.6);
+}
+
+/*Image border and paragraph adjustment*/
+div#quaver_box div#my_guitar img{
+  margin: 20px 15px 5px 10px;
+  box-shadow: -2px 3px 7px #000;
+  float: left;
+}
+
+/*CSS for page signature*/
+div#quaver_box p#signature{
+  font-family: 'Lobster Two', Arial, Tahoma, Helvatica, sans-serif;
+  font-weight: 700;
+  font-size: 1.4em;
+}
+
+/*CSS for hiding image that is to be displayed on mobile site*/
+div#quaver_box div#mobile_guitar img{
+  display: none;
+}
+
+/*Adjusting text on page inside container*/
+div#quaver_intro{
+  padding: 20px 10px 10px 10px;
+}
+
+/****************** Register Styles ******************/
+
+/*Rules for h1 and legend tag*/
+section h1, legend{
+  font-family: Vollkorn, Arial, Tahoma, Helvatica, sans-serif;
+  font-weight: 700;
+}
+
+/*Rule specific to legend tag*/
+section form legend{
+  border-radius: 8px;
+  text-shadow: 0 2px 4px #000;
+}
+
+/*Rule specific to fieldset inside a form with class*/
+form.form_style fieldset{
+  background-color: rgba(200, 200, 200, .5);
+  width: 960px;
+  box-sizing: border-box;
+  border: 1px solid #333;
+  margin: 10px 0;
+}
+
+/*Rule specific to legend inside a form with class*/
+form.form_style legend{
+  background: linear-gradient(#000, #6d6d8b 40%);
+  display: block;
+  color: #fff;
+  padding: 1px 8px 2px 8px;
+  border: 1px solid #333;
+}
+
+/*Rule specific to label inside a form with class*/
+form.form_style label{
+  width: 200px;
+  display: block;
+  clear: both;
+  float: left;
+}
+
+/*Rule specific to input sibling inside a form with class*/
+form.form_style input + label{
+  float: none;
+  display: inline;
+  width: auto;
+}
+
+/*Rule specific to select sibling inside a form with class*/
+form.form_style label + select{
+  float: none;
+  display: inline;
+  width: auto;
+}
+
+/*Multiple CSS selector for input tag*/
+form.form_style input[type="text"],
+form.form_style input[type="email"],
+form.form_style input[type="password"],
+form.form_style input[type="tel"],
+form.form_style input[type="number"]
+{
+  width: 250px;
+  background-color: #ccc;
+  -webkit-box-shadow: inset 1px 1px 3px;
+  -moz-box-shadow: inset 1px 1px 3px;
+  -o-box-shadow: inset 1px 1px 3px;
+  box-shadow: inset 1px 1px 3px;
+  border: 2px solid #666;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+/*Rule specific to positioning Submit and Reset buttons*/
+#btn_align{
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+/*Rule for label tag with a class query_label which is inside form tag with a class form_style*/
+form.form_style label.query_label{
+  float: none;
+  display: block;
+  width: auto;
+}
+
+/****************** Marks Styles ******************/
+
+/*CSS for Container element*/
+div#marks_box{
+  margin: 0 auto;
+  margin-top: 15px;
+  background-color: rgba(255,255,255,0.6);
+  width: 100%;
+  padding: 50px 50px;
+  box-sizing: border-box;
+}
+
+/*Table sizing to fit in the display box*/
+section div#marks_box table{
+  margin: 0 auto;
+  width: 94%;
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+/*Table caption style*/
+div#marks_box caption{
+  border: 2px solid #000;
+  border-bottom: none;
+  background-color: #000;
+  color: #fff;
+}
+
+/*Table heading border and coloring*/
+div#marks_box th{
+  border: 2px solid #000;
+  background-color: #6d6d8b;
+  color: #ccc;
+}
+
+/*Table data border*/
+div#marks_box td{
+  border: 2px solid #000;
+  padding: 5px 7px 5px 7px;
+  box-sizing: border-box;
+}
+
+.flash {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.flash.success {
+  border: 1px solid #1b770d;
+  color: #1b770d;
+  /*background: #e1f4de; */
+  background-color: rgba(200, 200, 200, .5);
+}
+
+.flash.error {
+  border: 1px solid #900;
+  color: #900;
+  /*background: #ffe0e0;*/
+  background-color: rgba(200, 200, 200, .5);
+}
+
+.error_disp{
+  color: #900;
+}
